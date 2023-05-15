@@ -26,7 +26,7 @@ export default function App() {
     <Box
       sx={{
         backgroundImage: 'url(/public/vimal.png)',
-        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
         backgroundBlendMode: 'overlay',
       }}
     >
