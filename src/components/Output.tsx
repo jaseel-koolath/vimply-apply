@@ -12,7 +12,7 @@ interface Props {
 
 export default function Output({ data }: Props) {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer>
       <Table size="small" aria-label="a dense table">
         <TableHead>
           <TableRow>

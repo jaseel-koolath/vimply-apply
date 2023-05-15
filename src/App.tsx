@@ -23,11 +23,17 @@ export default function App() {
   console.log(functions)
 
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundImage: 'url(/public/vimal.png)',
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        backgroundBlendMode: 'overlay',
+      }}
+    >
       <ResponsiveAppBar />
       <Container maxWidth="xl">
         <Box
-          sx={{ my: 4 }}
+          sx={{ my: 4, gap: 2 }}
           display={'flex'}
           width={'80vw'}
           height={'75vh'}
@@ -65,9 +71,27 @@ export default function App() {
                 </MenuItem>
               ))}
             </Select>
-            {/* <Button variant="contained" size="small">
-              Apply
-            </Button> */}
+            <Button
+              variant="contained"
+              size="small"
+              onClick={() => {
+                navigator.clipboard.writeText(
+                  csv
+                    .split(',')
+                    .map((value) => functions[fun](value.trim()))
+                    .join(',')
+                )
+              }}
+              disabled={csv === ''}
+            >
+              <img
+                src="/public/vimal.png"
+                alt="copy"
+                height="30px"
+                width="30px"
+              />
+              Copy Result
+            </Button>
           </Box>
 
           {/* Table  to display the output csv */}
