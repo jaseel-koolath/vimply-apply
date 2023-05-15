@@ -35,6 +35,7 @@ export default function App() {
         <Box
           sx={{ my: 4, gap: 2 }}
           display={'flex'}
+          flexDirection={['column', 'column', 'row']}
           width={'80vw'}
           height={'75vh'}
           gap={1}
