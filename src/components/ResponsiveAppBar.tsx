@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Vimply Apply" src="/public/vimal.png" />
+                <Avatar alt="Vimply Apply" src="/vimal.png" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -84,7 +84,10 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <img src="/vimal.png" alt="copy" height="25px" width="auto" />
+                  <Typography textAlign="center" ml={1}>
+                    {setting}
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>

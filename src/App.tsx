@@ -25,7 +25,7 @@ export default function App() {
   return (
     <Box
       sx={{
-        backgroundImage: 'url(/public/vimal.png)',
+        backgroundImage: 'url(/vimal.png)',
         backgroundColor: 'rgba(255, 255, 255, 0.95)',
         backgroundBlendMode: 'overlay',
       }}
@@ -84,12 +84,7 @@ export default function App() {
               }}
               disabled={csv === ''}
             >
-              <img
-                src="/public/vimal.png"
-                alt="copy"
-                height="30px"
-                width="30px"
-              />
+              <img src="/vimal.png" alt="copy" height="30px" width="30px" />
               Copy Result
             </Button>
           </Box>
