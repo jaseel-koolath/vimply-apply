@@ -65,7 +65,7 @@ export default function App() {
               onChange={handleFun}
               size="small"
             >
-              {Object.entries(functions).map(([key, value]) => (
+              {Object.entries(functions).map(([key]) => (
                 <MenuItem value={key} key={key}>
                   {key}
                 </MenuItem>
