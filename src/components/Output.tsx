@@ -25,8 +25,7 @@ export default function Output({ data }: Props) {
               key={i}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell>{i + 1}</TableCell>
-
+              <TableCell align="left">{i + 1}</TableCell>
               <TableCell align="left">{row}</TableCell>
             </TableRow>
           ))}
